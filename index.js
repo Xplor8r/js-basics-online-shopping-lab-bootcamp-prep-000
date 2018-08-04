@@ -30,12 +30,12 @@ function viewCart() {
     var a = `In your cart, you have `;
     for (var i = 0; i < cart.length -1; i++) {
       if (i === 0) {
-      var b = `${cart[i].itemName} at $${cart[i].itemPrice}, `;
+      var one = `${cart[i].itemName} at $${cart[i].itemPrice}, `;
     } 
     else {
-    var b = b + `${cart[i].itemName} at $${cart[i].itemPrice}, `;
+    var b = one + `${cart[i].itemName} at $${cart[i].itemPrice}, `;
     }
-    var c = `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
+    var c = `and ${cart[cart.length - 1].itemName} at $${cart[cart.length -1].itemPrice}.`;
     }
   return a + b + c;
   }
